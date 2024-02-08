@@ -13,7 +13,7 @@ from nltk.corpus import stopwords
 import joblib
 from PIL import Image
 
-nltk.download('popular')
+nltk.download('english')
 
 stop_words = set(stopwords.words('english'))
 stemmer = PorterStemmer()
