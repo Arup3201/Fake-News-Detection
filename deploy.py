@@ -11,6 +11,10 @@ from nltk.tokenize import word_tokenize, sent_tokenize
 from nltk.stem import PorterStemmer
 from nltk.corpus import stopwords
 import joblib
+from sklearn.feature_extraction.text import HashingVectorizer
+from sklearn.preprocessing import StandardScaler
+from sklearn.pipeline import make_pipeline
+from sklearn.linear_model import LogisticRegression
 from PIL import Image
 
 nltk.download('english')
