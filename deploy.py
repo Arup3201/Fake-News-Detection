@@ -17,7 +17,7 @@ from sklearn.pipeline import make_pipeline
 from sklearn.linear_model import LogisticRegression
 from PIL import Image
 
-nltk.download('english')
+nltk.download('popular')
 
 stop_words = set(stopwords.words('english'))
 stemmer = PorterStemmer()
