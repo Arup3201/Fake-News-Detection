@@ -159,7 +159,7 @@ def prepare_model_input(news_data):
     news_data['text'] = news_data['text'].apply(preprocess)
     
     # Load the vectorizer
-    vectorizer = joblib.load('../model/vectorizer.joblib')
+    vectorizer = joblib.load('./model/vectorizer.joblib')
 
     # Convert the news into vectors
     vectorized_features = vectorizer.transform(news_data['text'])
@@ -182,7 +182,7 @@ def prepare_model_input(news_data):
     return news_data.to_numpy()
 
 def make_predictions(X):
-    pipeline = joblib.load('../model/pipeline.joblib')
+    pipeline = joblib.load('./model/pipeline.joblib')
     predictions = pipeline.predict(X)
 
     return predictions
@@ -198,7 +198,7 @@ def main():
     st.markdown("This application provides both batch and online prediction.")
 
     # Build the sidebars of the streamlit app
-    image = Image.open("../images/app-image.png")
+    image = Image.open("./images/app-image.png")
     add_selectbox = st.sidebar.selectbox("How do you want to do the classification?", ("Online", "Batch"))
     st.sidebar.info('This application is created to detect fake news.')
     st.sidebar.image(image)
