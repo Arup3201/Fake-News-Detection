@@ -22,3 +22,4 @@ nose
 psycopg2
 textblob
 plotly
+streamlit
