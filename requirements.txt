@@ -19,7 +19,6 @@ requests
 blaze
 regex
 nose
-psycopg2
 textblob
 plotly
 streamlit
