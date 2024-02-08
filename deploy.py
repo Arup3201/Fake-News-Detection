@@ -6,6 +6,7 @@ Developed by Arup Jana.
 import streamlit as st
 import re
 import pandas as pd
+import nltk
 from nltk.tokenize import word_tokenize, sent_tokenize
 from nltk.stem import PorterStemmer
 from nltk.corpus import stopwords
